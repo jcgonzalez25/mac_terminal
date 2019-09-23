@@ -64,14 +64,14 @@ BaseStyles.prefix = {
 export default {
     light: Object.assign({}, BaseStyles, {
         body: Object.assign({}, BaseStyles.body, {
-            backgroundColor: '#fff',
-            color: '#5D5D5D',
+            backgroundColor: 'black',
+            color: 'green',
         }),
         header: Object.assign({}, BaseStyles.header, {
-            backgroundColor: '#eee',
+            backgroundColor: 'green',
         }),
         prefix: Object.assign({}, BaseStyles.prefix, {
-            color: '#bd081c',
+            color: 'green',
         }),
     }),
     dark: Object.assign({}, BaseStyles, {

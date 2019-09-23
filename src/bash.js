@@ -22,7 +22,6 @@ export default class Bash {
     execute(input, currentState) {
         this.prevCommands.push(input);
         this.prevCommandsIndex = this.prevCommands.length;
-
         // Append input to history
         const newState = Object.assign({}, currentState, {
             history: currentState.history.concat({
@@ -30,7 +29,6 @@ export default class Bash {
                 value: input,
             }),
         });
-
         const commandList = BashParser.parse(input);
         return this.runCommands(commandList, newState);
     }

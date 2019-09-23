@@ -6,15 +6,17 @@ const extensions = {
     sudo: {
         exec: ({ structure, history, cwd }) => {
             return { structure, cwd,
-                history: history.concat({ value: 'Nice try... (ಠ(ಠ(ಠ_ಠ)ಠ)ಠ)' }),
+                history: history.concat({ value: 'JC Says No Sudo For You haha' }),
             };
         },
     },
 };
 
 const history = [
-    { value: 'Hackers will be high-fived. ( ‘-’)人(ﾟ_ﾟ )' },
-    { value: 'Type `help` to begin' },
+    { value: 'Note From Juan: Welcome To The Term (--  __  ---)' },
+    {value: 'Run $git visit'},
+    {value: 'to see my github, Enjoy!'},
+    { value: 'Type `help` to begin' }
 ];
 
 const structure = {
@@ -31,7 +33,7 @@ const structure = {
         file2: { content: 'The is the content for file2 in the <public> directory.' },
         file3: { content: 'The is the content for file3 in the <public> directory.' },
     },
-    'README.md': { content: '✌⊂(✰‿✰)つ✌ Thanks for checking out the tool! There is a lot that you can do with react-bash and I\'m excited to see all of the fun commands and projects build on top of it!' },
+    'README.md': { content: '✌⊂(✰‿✰)つ✌ Thanks for checking it out!' },
 };
 
 const Root = <Terminal history={history} structure={structure} extensions={extensions} />;

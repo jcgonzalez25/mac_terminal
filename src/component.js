@@ -193,7 +193,7 @@ Terminal.defaultProps = {
     onClose: noop,
     onExpand: noop,
     onMinimize: noop,
-    prefix: 'hacker@default',
+    prefix: 'React_Shell',
     structure: {},
     styles: {},
     theme: Terminal.Themes.LIGHT,

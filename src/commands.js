@@ -1,7 +1,7 @@
 import * as Util from './util';
 import { Errors } from './const';
 
-const helpCommands = ['clear', 'ls', 'cat', 'mkdir', 'cd', 'pwd', 'echo', 'printenv', 'whoami', 'rm'];
+const helpCommands = ['clear', 'ls', 'cat', 'mkdir', 'cd', 'pwd', 'echo', 'printenv', 'whoami', 'rm','git'];
 
 export const help = {
     exec: (state) => {
@@ -14,7 +14,11 @@ export const help = {
         });
     },
 };
-
+export const git = {
+    exec: () => {
+        window.open("https://github.com/jcgonzalez25")
+    }
+};
 export const clear = {
     exec: (state) => {
         return Object.assign({}, state, { history: [] });
