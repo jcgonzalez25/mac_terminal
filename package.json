@@ -74,5 +74,6 @@
     "es/",
     "lib/"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "version":"v10.16.3"
 }
